@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    background-color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+/* Input Section */
+
+.form{
+    background-color: rgb(8, 119, 82);
+    width: 40%;
+    height: 350px;
+    padding: 45px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject label{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.subject input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.subject input:focus{
+    background-color: rgb(6, 107, 69);
+    color: rgb(255, 255, 255);
+}
+.subject button{
+    width: 260px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 7px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.subject button:hover{
+    background-color: rgb(2, 73, 49);
+    color: white;
+    cursor: pointer;
+}
+/* Output Section. */
+.table{
+    background-color: rgb(181, 170, 20);
+    width: 40%;
+    padding: 45px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        flex-direction: column;
+        gap: 30px;
+        border: 0;
+    }
+    .form, .table{
+        width: 100%;
+    }
+}
