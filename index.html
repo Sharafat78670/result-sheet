@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Result Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="comtainer">
-        <form action="">
+        <div class="form">
             <div class="subject">
-                <label for="">Math</label>
-                <input type="text" placeholder="Mark">
-            </div>
-            <div class="subject">
-                <label for="">English</label>
-                <input type="text" placeholder="Mark">
+                <label >Math</label>
+                <input id="sub-one" type="number" placeholder="Mark">
             </div>
             <div class="subject">
-                <label for="">Science</label>
-                <input type="text" placeholder="Mark">
+                <label >English</label>
+                <input id="sub-two" type="number" placeholder="Mark">
             </div>
             <div class="subject">
-                <label for="">History</label>
-                <input type="text" placeholder="Mark">
+                <label>Science</label>
+                <input id="sub-three" type="number" placeholder="Mark">
             </div>
             <div class="subject">
-                <label for="">ICT</label>
-                <input type="text" placeholder="Mark">
+                <label>History</label>
+                <input id="sub-four" type="number" placeholder="Mark">
             </div>
-            <div class="mark-table">
-                <table>
-                    <tr>
-                        <td>Total Mark :</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td>Obtain Mark :</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Percentage :</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Grade :</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Remarks :</td>
-                        <td></td>
-                    </tr>
-                </table>
+            <div class="subject">
+                <label>ICT</label>
+                <input id="sub-five" type="number" placeholder="Mark">
             </div>
-        </form>
+            <div class="subject">
+                <button onclick="return calculate()">Calculate</button>
+            </div>
+            
+            </div>
+        <div class="mark-table">
+            <table>
+                <tr>
+                    <td>Total Mark :</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Obtain Mark :</td>
+                    <td id="obtain"></td>
+                </tr>
+                <tr>
+                    <td>Percentage :</td>
+                    <td id="pre"></td>
+                </tr>
+                <tr>
+                    <td>Grade :</td>
+                    <td id="grade"></td>
+                </tr>
+                <tr>
+                    <td>Remarks :</td>
+                    <td id="remark"></td>
+                </tr>
+            </table>
+        </div>
+        <script src="result.js"></script>
     </div>
 </body>
+
 </html>
