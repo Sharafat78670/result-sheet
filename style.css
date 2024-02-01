@@ -99,4 +99,10 @@ table{
     .form, .table{
         width: 100%;
     }
+    .form{
+        height: 370px;
+    }
+    table{
+        padding:80px 20px 50px 20px;
+    }
 }
