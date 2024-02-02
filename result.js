@@ -47,24 +47,30 @@ function calculate() {
 
         // Remark Section
         if (pre >= 40 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
-            document.getElementById('remark').textContent = "Pass"
+            document.getElementById('remark').textContent = "Pass";
+
+            document.getElementById('hypen').textContent="";
+            document.getElementById('fail').textContent="";
+            document.getElementById('sub_fail').textContent="" ;
+            
         }
         else {
-            document.getElementById('remark').textContent = "Fail"
-            let failSub = [a, b, c, d, e]
-            let element = [];
+            document.getElementById('remark').textContent = "Fail";
+             failSub = [a, b, c, d, e];
+             element = [];
             for (let i = 0; i < failSub.length; i++) {
                 if (failSub[i] >= 40) {
-                    continue;
+                    continue; 
                 }
-                element.push(failSub[i]);
-                console.log(element.length)
-                document.getElementById('hypen').textContent="-";
-                document.getElementById('fail').innerHTML=element.length;
-                document.getElementById('sub_fail').textContent="Sub";
+                element.push(failSub[i]);   
 
             }
-        }
+                document.getElementById('hypen').textContent="-";
+                document.getElementById('fail').innerHTML=element.length;
+                document.getElementById('sub_fail').textContent="Sub" ;
+                   
+         }   
+       
     }
 
 }
