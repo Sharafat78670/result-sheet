@@ -20,25 +20,26 @@ function calculate() {
 
         var pre = obtainMark / 500 * 100;
         document.getElementById('pre').innerHTML = pre.toFixed(2);
+        document.getElementById('percent').textContent="%";
 
         // Grade Section
 
-        if (pre >= 90 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        if (pre >= 80 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "A+"
         }
-        else if (pre >= 80 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        else if (pre >= 70 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "A"
         }
-        else if (pre >= 70 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        else if (pre >= 60 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "A-"
         }
-        else if (pre >= 60 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        else if (pre >= 50 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "B"
         }
-        else if (pre >= 50 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        else if (pre >= 40 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "C"
         }
-        else if (pre >= 40 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        else if (pre >= 33 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('grade').textContent = "D"
         }
         else {
@@ -46,7 +47,7 @@ function calculate() {
         }
 
         // Remark Section
-        if (pre >= 40 && a >= 40 && b >= 40 && c >= 40 && d >= 40 && e >= 40) {
+        if (pre >= 33 && a >= 33 && b >= 33 && c >= 33 && d >= 33 && e >= 33) {
             document.getElementById('remark').textContent = "Pass";
 
             document.getElementById('hypen').textContent="";
@@ -59,7 +60,7 @@ function calculate() {
              failSub = [a, b, c, d, e];
              element = [];
             for (let i = 0; i < failSub.length; i++) {
-                if (failSub[i] >= 40) {
+                if (failSub[i] >= 33) {
                     continue; 
                 }
                 element.push(failSub[i]);   

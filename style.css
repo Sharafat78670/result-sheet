@@ -9,6 +9,7 @@
     border: 4px solid rgb(2, 73, 49);
     border-radius: 0 0 10px 10px;
 }
+
 .sheet h3{
     text-align: center;
     font-size: 1.5rem;
@@ -100,6 +101,15 @@ table{
     color: rgb(130, 4, 4);
     font-size: 1.1rem;
 }
+/* .hide {
+    display: none;
+    text-align: center;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: rgb(3, 183, 180);
+  } */
 footer{
     width: 98%;
     height: 50px;

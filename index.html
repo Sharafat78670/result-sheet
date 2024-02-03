@@ -11,15 +11,17 @@
 <body>
     <div class="sheet">
         <h3>Result Sheet</h3>
+        <!-- <div class="myDIV"></div>
+        <div class="hide">I am shown when someone hovers over the div above.</div> -->
     </div>
     <div class="container">
         <div class="form">
             <div class="subject">
-                <label >Math</label><br>
+                <label>Math</label><br>
                 <input id="sub-one" type="number" placeholder="Mark">
             </div>
             <div class="subject">
-                <label >English</label><br>
+                <label>English</label><br>
                 <input id="sub-two" type="number" placeholder="Mark">
             </div>
             <div class="subject">
@@ -37,8 +39,8 @@
             <div class="subject">
                 <button onclick="return calculate()">Calculate</button>
             </div>
-            
-            </div>
+
+        </div>
         <div class="table">
             <table>
                 <tr>
@@ -58,6 +60,7 @@
                     <td>:</td>
                     <td> </td>
                     <td id="pre" class="mark"></td>
+                    <td id="percent" class="mark"></td>
                 </tr>
                 <tr>
                     <td>Grade </td>
@@ -71,7 +74,7 @@
                     <td> </td>
                     <td id="remark" class="mark"></td>
                     <td id="hypen" class="failSub"></td>
-                    <td id="fail"  class="failSub"></td>
+                    <td id="fail" class="failSub"></td>
                     <td id="sub_fail" class="failSub"></td>
 
                 </tr>
@@ -79,9 +82,10 @@
         </div>
         <script src="result.js"></script>
     </div>
-<footer>
-    <p>&copy; Sharafat Karim</p>
-</footer>
+
+    <footer>
+        <p>&copy; Sharafat Karim</p>
+    </footer>
 </body>
 
 </html>
